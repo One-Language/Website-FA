@@ -1,6 +1,4 @@
-# Website-FA
-
-# زبان برنامه نویسی وان - One Programming Language
+# وب سایت فارسی زبان برنامه نویسی وان - One Programming Language
 
 ## اولین زبان برنامه نویسی ایرانی
 

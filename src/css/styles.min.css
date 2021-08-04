@@ -1,0 +1,62 @@
+@font-face {
+    font-family: vazir;
+    src: url("../font/vazir/Vazir.ttf");
+}
+
+body {
+    font-family: vazir;
+    margin: auto;
+}
+
+nav {
+    margin-right: 7vw;
+}
+
+.top {
+    background: linear-gradient(
+        to top right,
+        rgb(194,121,67),
+        rgb(42,76,194)
+    );
+    width: 100%;
+    height: 44vw;
+    border-radius: 0 0 25% 25%;
+}
+
+.nav-bar-title {
+    font-size: 1.2vw;
+}
+
+.nav-bar-item {
+    display: flex;
+}
+
+.nav-bar-item > a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: white;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    padding: 9px 1px 9px 1px;
+    transition: color 1s;
+}
+
+.nav-bar-item > a:hover {
+    color: rgb(197, 133, 84);
+}
+
+.nav-bar-item > a > li {
+    list-style-type: none;
+}
+
+.description {
+    text-align: center;
+    padding: 10vw 0;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: font-size 1s;
+}
+
+.description:hover {
+    font-size: 1.2vw;
+}

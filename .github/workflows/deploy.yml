@@ -1,14 +1,20 @@
-on: [push]
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   mirror_with_sftp:
+    if: github.repository == 'One-Language/Website-FA'
     name: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: FTP Deployer
-        uses: sand4rt/ftp-deployer@v1.4
+        uses: sand4rt/ftp-deployer@v1.7
         with:
           sftp: true
           host: ${{ secrets.SERVER_HOST }}
@@ -20,4 +26,4 @@ jobs:
           cleanup: false
           include: '[ "*", "**/*" ]'
           exclude: '["node_modules/**", "_secret.php", ".github/**", ".git/**", "*.env"]'
-          pasive: true
+          passive: true
